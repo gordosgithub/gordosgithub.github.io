@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Haven User List</title>
+<style>
+body {
+	padding:15px;
+	margin:0px;
+	
+	background:#444;
+}
+
+span.heading {
+	margin:0px;
+	padding-left:42px;
+	
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-size:36px;
+	color:#FFF;
+	
+	background-image:url(images/sfLogo32.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+table {
+	border-top-left-radius:10px;
+	margin-top:15px;
+	width:46%;
+	
+	border-collapse:collapse;
+	
+	background:#EEE;
+	
+	font-family:"Segoe UI",Arial,sans-serif;
+}
+
+#accessLog {
+ position:absolute;
+ top:64px;
+ right:15px;
+}
+
+tr:nth-child(even){
+	background:#FFF;
+}
+
+th,td {
+	padding:10px;
+	text-align:left;
+}
+
+th {
+	font-size:24px;
+	font-weight:normal;
+	color:#FFF;
+}
+
+#userList th {
+	border-left:1px solid #09F;
+	border-right:1px solid #09F;
+	background:#1DACFA;
+}
+
+#accessLog th {
+	border-left:1px solid #E00;
+	border-right:1px solid #E00;
+	background:#FF472D;
+}
+
+table tr th:first-child;{
+	border-left:1px solid #1DACFA;
+}
+
+table tr th:last-child; {
+	border-right:1px solid #1DACFA;
+}
+
+tr:hover {
+	background:#DDD;
+	
+	cursor:pointer;
+}
+
+th:hover {
+	cursor:default;
+}
+
+td {
+	position:relative;
+	
+	border:1px solid #DDD;
+	
+	font-size:16px;
+}
+
+.arrow {
+	display:none;
+	position:absolute;
+	right:-45px;
+	top:-2px;
+	
+	width:45px;
+	height:45px;
+	
+	background-image:url(images/userList_Arrow.png);
+}
+
+.steam {
+	display:none;
+	position:absolute;
+	right:15px;
+	top:4px;
+	
+	width:32px;
+	height:32px;
+	
+	background-image:url(images/userList_steam32.png);
+}
+
+div.steam:hover {
+	background-image:url(images/userList_steam32_hover.png);
+}
+
+table#userList tr:hover div.steam {
+	display:block;
+}
+
+#accessLog {
+	display:none;
+}
+</style>
+</head>
+
+<body>
+<span class="heading">Haven User List</span>
+<br />
+<table id="userList">
+	<tr>
+    	<th>Username</th>
+        <th>Last Access</th>
+    </tr>
+    <tr class="userListRow">
+    	<td>Testing1 <div class="steam"></div></td>
+        <td>Testing2 <div class="arrow"></div></td>
+    </tr>
+    <tr class="userListRow">
+    	<td>Testing1 <div class="steam"></div></td>
+        <td>Testing2 <div class="arrow"></div></td>
+    </tr>
+    <tr class="userListRow">
+    	<td>Testing1 <div class="steam"></div></td>
+        <td>Testing2 <div class="arrow"></div></td>
+    </tr>
+    <tr class="userListRow">
+    	<td>Testing1 <div class="steam"></div></td>
+        <td>Testing2 <div class="arrow"></div></td>
+    </tr>
+    <tr class="userListRow">
+    	<td>Testing1 <div class="steam"></div></td>
+        <td>Testing2 <div class="arrow"></div></td>
+    </tr>
+</table>
+<table id="accessLog">
+	<tr>
+    	<th>IP Address</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+    	<td>Testing1</td>
+        <td>Testing2</td>
+    </tr>
+    <tr>
+    	<td>Testing1</td>
+        <td>Testing2</td>
+    </tr>
+    <tr>
+    	<td>Testing1</td>
+        <td>Testing2</td>
+    </tr>
+    <tr>
+    	<td>Testing1</td>
+        <td>Testing2</td>
+    </tr>
+    <tr>
+    	<td>Testing1</td>
+        <td>Testing2</td>
+    </tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+$(".userListRow").click(function(){
+$("tr div").hide();
+$(this).find("div.arrow").toggle();
+});
+</script>
+
+</body>
+
+</html>

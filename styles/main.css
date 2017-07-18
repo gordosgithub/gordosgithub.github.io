@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+body {
+	margin:0px;
+	padding:0px;
+	
+	background:#111;
+}
+
+
+/*Menu*/
+#topBar {
+	position:fixed;
+	top:0px;
+	
+	width:100%;
+	height:5vh;
+	max-height:50px;
+	min-height:32px;
+	background:#111;
+	
+	border-bottom:1px solid #FFF;
+	
+	z-index:100;
+}
+
+#topBar a {
+	text-decoration:none;
+	
+	display:inline-block;
+	float:left;
+	
+	height:75%;
+}
+
+#topBar a img{
+	margin-top:2%;
+	margin-left:5px;
+	
+	height:96%;
+}
+
+#topBar ul {
+	display:inline-block;
+	float:right;
+	
+	margin:0px;
+	padding:0px;
+	
+	height:100%;
+}
+
+#topBar ul li {
+	display:inline-block;
+	float:left;
+	
+	padding-left:20px;
+	padding-right:20px;
+	
+	height:100%;
+	
+	border-right:1px solid #333;
+	
+	font-family:"Segoe UI",Arial,sans-serif;
+	color:#FFF;
+	font-size:12px;
+}
+
+#topBar ul li a {
+	position:relative;
+	
+	top:30%;
+	
+	text-decoration:none;
+	color:#FFF;
+}
+
+#topBar ul li:hover {
+	background:#333;
+	
+	cursor:pointer;
+}
+
+
+/*Pages*/
+.contWrap {
+	position:relative;
+	width:100%;
+	height:100vh;
+	
+	background-color:#111;
+	
+	padding:0px;
+	margin:0px;
+}
+
+
+/*Showcase*/
+#contWrap1 {
+	background-image:url(../images/showCase_CTF_CityScape_Tunnel_00.png);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+#bottomBox {
+	position:absolute;
+	bottom:0px;
+	
+	width:100%;
+	height:25vh;
+	
+	background-color:#111;
+	background-image:url(../images/decor_logoColorsBG_1980.png);
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	border-top:#FFF solid 3px;
+	
+	text-align:center;
+}
+
+#bottomBox img {
+	height:40vh;
+}
+
+#imgWrap1 {
+	position:absolute;
+	
+	top:-20vh;
+	width:100%;
+}
+
+
+/*Divider*/
+.decorDivider {
+	position:relative;	
+	top:7vh;
+	
+	width:50%;
+	max-width:750px;
+	
+	opacity:.5;
+}
+
+
+/*News*/
+.newsWrap {
+	position:relative;
+	float:left;
+	margin-top:10vh;
+	margin-left:4%;
+	padding:1%;
+	
+	width:26%;
+	min-width:420px;
+	
+	background-color:#222;
+	border:solid 1px #666;
+	
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-size:12pt;
+}
+
+.newsWrap .newsBracketLeft {
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	
+	width:57px;
+	height:46px;
+	
+	background:url(../images/decor_newsBracket_topLeft_Red.png);
+}
+
+#newsWrap3 .newsBracketLeft {
+	background:url(../images/decor_newsBracket_topLeft_Blue.png);
+}
+
+.newsWrap .newsBracketRight {
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	
+	width:57px;
+	height:46px;
+	
+	background:url(../images/decor_newsBracket_topRight_Red.png);
+}
+
+#newsWrap2 .newsBracketRight {
+	background:url(../images/decor_newsBracket_topRight_Blue.png);
+}
+
+#newsWrap3 .newsBracketRight {
+	background:url(../images/decor_newsBracket_topRight_Blue.png);
+}
+
+.newsWrap .newsHead {
+	width:96%;
+	padding:2%;
+	
+	background-image:url(../images/decor_newsTitleBG.png);
+	background-size:cover;
+	
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-size:15pt;
+	color:#BBB;
+}
+
+.newsWrap .newsHead .date {
+	float:right;
+}
+
+.newsWrap .newsHead .title {	
+	color:#FFF;
+	font-size:23pt;
+}
+
+.newsWrap .newsTxt {
+	color:#DDD;
+}
+
+#newsWrap2 .newsImg {
+	float:right;
+	
+	margin:10px 10px 0px 10px;
+	
+	width:55%;
+	
+	border:1px solid #666;
+}
+
+.newsWrap .newsDecorBottom {
+	position:absolute;
+	bottom:-201px;
+	left:0px;
+	
+	background:url(../images/decor_newsBottom_01.png);
+	
+	width:100%;
+	height:200px;
+}
+
+.newsWrap #newsDecorBottom2 {
+	background:url(../images/decor_newsBottom_00.png);
+}
+
+.newsWrap #newsDecorBottom3 {
+	background:url(../images/decor_newsBottom_02.png);
+}
