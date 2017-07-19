@@ -5,10 +5,9 @@
 <title>Sourceforts 2: Haven</title>
 
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-
 </head>
 
-<body>
+<body onLoad="loadNews()">
 <div id="topBar">
 	<a href="index.html">
     <img src="images/logo_SFSquare_40.png" />
@@ -33,11 +32,12 @@
         </div>
     </div>
 </div>
-<div class="contWrap" id="news">
+<div class="contDivide">
 	<center>
-	<img class="decorDivider" src="images/decor_arrowDivider_1024.png" />
+	<img class="decorDivider" src="images/decor_arrowDivider_01_1024.png"/>
     </center>
-    <br />
+</div>
+<div class="contWrap" id="news">
     <div class="newsWrap" id="newsWrap1">
     	<div class="newsBracketLeft"></div>
     	<div class="newsBracketRight"></div>
@@ -45,13 +45,7 @@
 			<span class="title">First News Entry</span>
     		<span class="date">4.22.17</span>
     	</div>
-		<span class="newsTxt">
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac velit fermentum, venenatis diam non, semper diam. In hac habitasse platea dictumst. Fusce accumsan velit vitae purus consequat, non pellentesque odio vestibulum. Nam vestibulum vehicula est maximus molestie. Donec laoreet maximus neque a efficitur. Sed pharetra accumsan bibendum. Quisque at lorem eget purus tincidunt congue. Curabitur pretium venenatis lacinia. Sed feugiat varius gravida. Duis id velit eleifend, mollis nisi quis, imperdiet velit. Pellentesque viverra elementum sapien maximus facilisis. Sed ut orci at dolor tempus suscipit.
-<br />
-<br />
-Maecenas molestie imperdiet urna id efficitur. Integer facilisis vel urna ac scelerisque. In hac habitasse platea dictumst. Etiam at finibus elit, a porta elit. Aliquam pretium lorem id nulla malesuada posuere. Vestibulum id velit non tortor hendrerit iaculis. Fusce viverra, nibh eu facilisis iaculis, felis justo vulputate dolor, ac eleifend turpis eros eget sapien. In vitae gravida neque. Praesent in metus orci. Fusce id enim iaculis, consectetur nibh feugiat, rutrum neque. Nullam fermentum ligula eu purus efficitur lacinia. Quisque ornare purus eget egestas ornare. Nam scelerisque, lorem at placerat faucibus, nunc nulla ornare dui, id mattis eros est feugiat nulla. Sed aliquet placerat justo, mattis scelerisque arcu vestibulum nec. Mauris ex turpis, laoreet in iaculis in, pellentesque at nunc. In vulputate tincidunt justo, et scelerisque massa volutpat vitae.
-<br />
+		<span class="newsTxt" id="newsTxt1">
 		</span>
         <div class="newsDecorBottom" id="newsDecorBottom1"></div>
     </div>
@@ -62,11 +56,7 @@ Maecenas molestie imperdiet urna id efficitur. Integer facilisis vel urna ac sce
 			<span class="title">Second News Entry</span>
     		<span class="date">4.23.17</span>
     	</div>
-		<span class="newsTxt">
-<br />
-<img class="newsImg" src="images/showCase_Prop_Barrier.png" />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac velit fermentum, venenatis diam non, semper diam. In hac habitasse platea dictumst. Fusce accumsan velit vitae purus consequat, non pellentesque odio vestibulum. Nam vestibulum vehicula est maximus molestie. Donec laoreet maximus neque a efficitur. Sed pharetra accumsan bibendum. Quisque at lorem eget purus tincidunt congue. Curabitur pretium venenatis lacinia. Sed feugiat varius gravida. Duis id velit eleifend, mollis nisi quis, imperdiet velit. Pellentesque viverra elementum sapien maximus facilisis. Sed ut orci at dolor tempus suscipit.
-<br />
+		<span class="newsTxt" id="newsTxt2">
 		</span>
         <div class="newsDecorBottom" id="newsDecorBottom2"></div>
     </div>
@@ -77,16 +67,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac velit fermen
 			<span class="title">Third News Entry</span>
     		<span class="date">4.24.17</span>
 		</div>
-		<span class="newsTxt">
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac velit fermentum, venenatis diam non, semper diam. In hac habitasse platea dictumst. Fusce accumsan velit vitae purus consequat, non pellentesque odio vestibulum. Nam vestibulum vehicula est maximus molestie. Donec laoreet maximus neque a efficitur. Sed pharetra accumsan bibendum. Quisque at lorem eget purus tincidunt congue. Curabitur pretium venenatis lacinia. Sed feugiat varius gravida. Duis id velit eleifend, mollis nisi quis, imperdiet velit. Pellentesque viverra elementum sapien maximus facilisis. Sed ut orci at dolor tempus suscipit.
-<br />
-<br />
-Maecenas molestie imperdiet urna id efficitur. Integer facilisis vel urna ac scelerisque. In hac habitasse platea dictumst. Etiam at finibus elit, a porta elit. Aliquam pretium lorem id nulla malesuada posuere. Vestibulum id velit non tortor hendrerit iaculis. Fusce viverra, nibh eu facilisis iaculis, felis justo vulputate dolor, ac eleifend turpis eros eget sapien. In vitae gravida neque. Praesent in metus orci. Fusce id enim iaculis, consectetur nibh feugiat, rutrum neque.
-<br />
+		<span class="newsTxt" id="newsTxt3">
 		</span>
         <div class="newsDecorBottom" id="newsDecorBottom3"></div>
     </div>
+    <div class="floatClear"></div>
+    <a href="archive/archive.html" class="bttn">ARCHIVES</a>
 </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+
 </body>
+
 </html>

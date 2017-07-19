@@ -1,0 +1,4 @@
+<br />
+<img class="newsImg" src="images/showCase_Prop_Barrier.png" />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac velit fermentum, venenatis diam non, semper diam. In hac habitasse platea dictumst. Fusce accumsan velit vitae purus consequat, non pellentesque odio vestibulum. Nam vestibulum vehicula est maximus molestie. Donec laoreet maximus neque a efficitur. Sed pharetra accumsan bibendum. Quisque at lorem eget purus tincidunt congue. Curabitur pretium venenatis lacinia. Sed feugiat varius gravida. Duis id velit eleifend, mollis nisi quis, imperdiet velit. Pellentesque viverra elementum sapien maximus facilisis. Sed ut orci at dolor tempus suscipit.
+<br />
