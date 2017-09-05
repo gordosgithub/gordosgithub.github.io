@@ -1,1 +1,2 @@
 # testSite
+Haven Example Site
